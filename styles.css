@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica", Sans-serif;
+    transition: 1s;
+}
+
+
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+header .logo{
+    padding-left: 5rem;
+}
+
+header .logo img{
+    width: 190px;
+}
+
+header .navegation{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+header .navegation a{
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+header .navegation a:hover{
+    font-size: 1.08em;
+}
+
+header .redes{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 5rem;
+}
+
+header .redes img{
+    width: 36px;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    position: absolute;
+    z-index: 1;
+    transition: 1s;
+    backdrop-filter: brightness(60%);
+}
+
+main.bg1{
+    background-image: url("https://tangie.com.ar/wp-content/uploads/2022/03/slider01.jpg");
+}
+
+main.bg2{
+    background-image: url("https://tangie.com.ar/wp-content/uploads/2022/03/slider02.jpg");
+}
+
+main.bg3{
+    background-image: url("https://tangie.com.ar/wp-content/uploads/2022/03/slider03.jpg");
+}
+
+main.bg4{
+    background-image: url("https://tangie.com.ar/wp-content/uploads/2022/03/slider04.jpg");
+}
+
+main section{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(60%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main section .apps{
+    width: 45%;
+    height: 225px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+main section .apps h3{
+    font-size: 2em;
+    text-align: center;
+}
+
+main section .apps .linksApps{
+    display: flex;
+    padding-top: 3.5rem;
+}
+
+main section .apps .playStore{
+    display: block;
+    background-image: url(./rss/googleStore.png);
+    background-size: 100%;
+    width: 150px;
+    height: 45px;
+    transition: .5s;
+}
+
+main section .apps .appStore{
+    display: block;
+    background-image: url(./rss/ios.png);
+    border-radius: 5px;
+    border: .5px solid rgb(132, 132, 132);
+    background-size: 100%;
+    width: 150px;
+    height: 45px;
+    transition: .5s;
+}
+
+main section .apps .app a:hover{
+    transform: scale(1.1);
+}
+
+main section .apps .app{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+main section .apps .app p{
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+main section .direccion{
+    color: #fff;
+    width: 30%;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section .direccion .localizacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+main section .direccion h3{
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+main section .direccion .logoFazenda{
+    width: 200px;
+}
+
+main section .direccion a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+main section .direccion a > img{
+    width: 50px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+}
+
+footer .contacto{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .contacto .container{
+    display: flex;
+    align-items: center;
+}
+
+footer .contacto .container img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+footer .contacto .container p{
+    color: #fff;
+}
+
