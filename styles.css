@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Helvetica", Sans-serif;
+    color: #fff;
     transition: 1s;
 }
 
@@ -66,19 +67,19 @@ main{
 }
 
 main.bg1{
-    background-image: url("https://tangie.com.ar/wp-content/uploads/2022/03/slider01.jpg");
+    background-image: url(./assets/slide-1.jpg);
 }
 
 main.bg2{
-    background-image: url("https://tangie.com.ar/wp-content/uploads/2022/03/slider02.jpg");
+    background-image: url(./assets/slide-2.jpg);
 }
 
 main.bg3{
-    background-image: url("https://tangie.com.ar/wp-content/uploads/2022/03/slider03.jpg");
+    background-image: url(./assets/slide-3.jpg);
 }
 
 main.bg4{
-    background-image: url("https://tangie.com.ar/wp-content/uploads/2022/03/slider04.jpg");
+    background-image: url(./assets/slide-4.jpg);
 }
 
 main section{
@@ -107,27 +108,22 @@ main section .apps .linksApps{
     padding-top: 3.5rem;
 }
 
-main section .apps .playStore{
-    display: block;
-    background-image: url(./rss/googleStore.png);
-    background-size: 100%;
+main section .apps .playStore img{
     width: 150px;
     height: 45px;
     transition: .5s;
 }
 
-main section .apps .appStore{
-    display: block;
-    background-image: url(./rss/ios.png);
+main section .apps .appStore img{
+    background-size: 100%;
     border-radius: 5px;
     border: .5px solid rgb(132, 132, 132);
-    background-size: 100%;
     width: 150px;
     height: 45px;
     transition: .5s;
 }
 
-main section .apps .app a:hover{
+main section .apps .app img:hover{
     transform: scale(1.1);
 }
 
@@ -147,8 +143,7 @@ main section .direccion{
     width: 30%;
     height: 290px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -162,10 +157,6 @@ main section .direccion .localizacion{
 main section .direccion h3{
     font-size: 1.5em;
     margin-bottom: 1rem;
-}
-
-main section .direccion .logoFazenda{
-    width: 200px;
 }
 
 main section .direccion a{
@@ -194,6 +185,7 @@ footer .contacto{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 footer .contacto .container{
@@ -208,6 +200,240 @@ footer .contacto .container img{
 }
 
 footer .contacto .container p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
 }
 
+@media screen and (max-width: 920px){
+    
+    header .logo{
+        padding-left: 1rem;
+    }
+
+    header .redes{
+        padding-right: 1rem;
+    }
+
+    header .navegation{
+        gap: 1rem;
+    }
+
+    main{
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    header .redes{
+        display: none;
+    }
+
+    header .navegation{
+        padding-right: 1.5rem;
+    }
+
+    main section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section .apps .linksApps{
+        gap: 1.5rem;
+    }
+
+    main section .apps{
+        width: 70%;
+        height: 30%;
+    }
+
+    main section .apps h3{
+        font-size: 2.4em;
+        text-align: center;
+    }
+
+    main section .direccion{
+        width: 60%;
+        height: 30%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section .direccion .localizacion{
+        gap: 2.5rem;
+    }
+    
+    main section .direccion h3{
+        font-size: 2.4em;
+        margin-bottom: 1rem;
+    }
+
+    main section .direccion a{
+        font-size: 2em;
+    }
+
+    main section .direccion a > img{
+        width: 100px;
+    }
+
+    footer .contacto{
+        gap: 1rem;
+    }
+    footer .contacto .container img{
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+    }
+    
+    footer .contacto .container p{
+        color: #fff;
+        font-size: 1em;
+    }
+
+    footer .contacto .container.uno{
+        order: 3;
+    }
+}
+
+@media screen and (max-width: 540px){
+
+    header{
+        width: 100%;
+        height: 120px;
+        flex-direction: column;
+        padding-top: .5rem;
+    }
+
+    headere .logo{
+        width: 100%;
+    }
+
+    header .navegation{
+        width: 100%;
+        justify-content: space-around;
+        gap: 0;
+        padding-right: 0;
+    }
+
+    main section{
+        gap: 3rem;
+    }
+
+    main section .apps{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        height: fit-content;
+        padding: 0 1rem;
+    }
+
+    main section .apps .linksApps{
+        gap: 0;
+        justify-content: space-between;
+        padding-top: 0;
+    }
+
+    main section .apps h3{
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    main section .direccion{
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section .direccion .localizacion{
+        gap: 0;
+    }
+    
+    main section .direccion h3{
+        font-size: 1.8em;
+        margin-bottom: 1rem;
+    }
+
+    main section .direccion a{
+        font-size: 1.7em;
+    }
+
+    main section .direccion a > img{
+        width: 70px;
+    }
+
+    footer .contacto{
+        padding-bottom: 2rem;
+    }
+
+    footer .contacto .container img{
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+    }
+
+    footer .contacto .container p{
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 420px){
+
+    main section .apps h3{
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    main section .apps .appStore img{
+        width: 150px;
+    }
+
+    main section .direccion h3{
+        font-size: 1.2em;
+        margin-bottom: 1rem;
+    }
+
+    main section .direccion a{
+        font-size: 1.1em;
+    }
+
+    main section .direccion a > img{
+        width: 40px;
+    }
+
+    footer .contacto{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding-bottom: 0;
+        gap: .5rem;
+    }
+
+    footer .contacto .container{
+        width: fit-content;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    footer .contacto .container img{
+        width: 20px;
+        height: 20px;
+        margin-right: 0;
+    }
+
+    footer .contacto .container p{
+        width: 100%;
+        gap: .3rem;
+        align-items: center;
+        font-size: .75em;
+    }
+}

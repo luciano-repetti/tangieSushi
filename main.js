@@ -28,12 +28,4 @@ function changeBackground(){
         changeBackground()
     }, 6000);
 }
-
-function changeBG(){
-    setInterval(() => {
-        
-    }, 
-    );
-}
-
 changeBackground()
